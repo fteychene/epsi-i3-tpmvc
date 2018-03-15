@@ -51,6 +51,10 @@ public class RateView {
         chfChange = new JTextField();
         chfChange.setColumns(8);
         mainPanel.add(chfChange, gridBagConstraints(1, 3, 1, 0, GridBagConstraints.HORIZONTAL));
+        
+        mainPanel.add(new JPanel(), gridBagConstraints(1, 4, 0, 0));
+        changeRate = new JButton("Change rate");
+        mainPanel.add(changeRate, gridBagConstraints(1, 4, 0, 0));
 
         return mainPanel;
     }
